@@ -23,7 +23,7 @@ village = input("enter your village name: ")
 gender = input("enter your gender: ")
 dob = input("enter your date of birth: ")
 age = int(input("enter your age: "))
-caste = (input("enter your caste: "))
+caste = input("enter your caste: ")
 
 stud = students()
 
@@ -37,8 +37,10 @@ stud = students()
 
 # print("===========================")
 
-if dob == 'x' or caste == 'x':
-    dob,caste = "skipped","skipped"
+if dob == 'x':
+    dob = "skipped"
+if caste == 'x':
+    case = "skipped"
 
 stud1 = stud.assign_details(roll_no,name,village,gender,dob,age,caste)
 stud_1 = stud.show_details()
