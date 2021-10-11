@@ -44,5 +44,4 @@ if caste == 'x':
 
 stud1 = stud.assign_details(roll_no,name,village,gender,dob,age,caste)
 stud_1 = stud.show_details()
-#ji
-#mohan 
+
