@@ -17,11 +17,6 @@ total_price = quantity*price
 curs.execute("insert into food_table values(?, ?, ?, ?, ?)",(id_no,name,quantity,price,total_price))
 
 
-
-
-
-
-
 conn.commit() #saveD
 conn.close()   
 

@@ -1,6 +1,6 @@
 #SQL -> stands for structure query language.
 #adding extra column in table
-
+ 
 import sqlite3
 
 conn = sqlite3.connect("swar.db")
