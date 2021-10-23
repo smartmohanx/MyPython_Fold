@@ -11,5 +11,7 @@ html_str = '''
 '''
 bs = BeautifulSoup(html_str,'html.parser')
 result = bs.find_all("h1")
+print(result)
+
 for i in result:
     print(i.text)
