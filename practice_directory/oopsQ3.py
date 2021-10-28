@@ -22,6 +22,7 @@ curs = conn.cursor()
 
 
 class Customer:
+    print("============\n YATRA.COM \n============")
     def __init__(self,name,no_people,package_cat,cost,t_date):
         self.name = name
         self.no_people = no_people
@@ -33,6 +34,7 @@ class Customer:
         print("customer name: ",self.name)
         print("Number of people: ",self.no_people)
         print("Package category(D/H/P): ",self.package_cat)
+        
         print("cost of customer: ",self.cost)
         print("Starting Date: ",self.t_date)
         print("Total bill amount of customer:",total_bill)
