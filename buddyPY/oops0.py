@@ -1,18 +1,22 @@
 
 class parent:  #class
 
-    name = "python"
-    teaching = "mohanx"   #static variables
+    def instance_var(self,a,b):  #instance method
+        self.a = a  
+        self.b = b  #instance variables
 
-    @staticmethod
-    def sum():   #static method
-        print("add:",10+30)
+    def display(self):  #instance method
+        print("first instance variable:",self.a)
+        print("second instance variable:",self.b)
+    
+    def add(self):   #instance method
+        sum = self.a + self.b
+        print("sum:",sum)
 
-    def add(self): #instance method
-
-        self.a = 10  
-        self.b = 20 #instance variables
-        print("i am add method.")
-
-#calling static method
-parent.sum()
+#creating object
+obj = parent()
+#calling instance variables
+obj.instance_var(10,20)
+#callling methods
+obj.display()
+obj.add()
